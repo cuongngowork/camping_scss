@@ -1,0 +1,40 @@
+$backgroundColor: #FAF4F2;
+$sectionBackgroundColor: #F8E1DB;
+$iconColor: #E76F51;
+
+@mixin commonBgImgProps {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $backgroundColor;
+}
+
+// HEADER
+.header {
+  padding: 10px 50px;
+
+  .header__nav {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+// GALLERY
+.gallery {
+  height: 600px;
+  background-image: url('/images/BG.png');
+  @include commonBgImgProps;
+}
+
+// CAROUSEL
+// STAY IN TOUCH
+// FOOTER
